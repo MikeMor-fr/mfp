@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
 
 // Mount function to start up the app
 const mountMarketing = (element) => {
-  ReactDOM.render(<h1>Marketing</h1>, element);
+  ReactDOM.render(<App />, element);
 };
 
 // If we are in development and isolation,
