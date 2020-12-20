@@ -1,15 +1,15 @@
-name: deploy-container
+name: Github Actions Example
 
 on:
+  pull_request:
   push:
-    branches:
+    branches: 
       - master
-    paths:
-      - "packages/container/**"
+      - develop
 
 defaults:
   run:
-    working-directory: packages/container
+    working-directory: container
 
 jobs:
   build:
