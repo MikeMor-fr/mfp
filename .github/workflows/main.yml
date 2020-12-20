@@ -6,8 +6,6 @@ on:
     branches: 
       - master
       - develop
-    paths:
-      - "container/**"
 
 defaults:
   run:
