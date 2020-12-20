@@ -6,6 +6,12 @@ on:
     branches: 
       - master
       - develop
+    paths:
+      - "container/**"
+
+defaults:
+  run:
+    working-directory: container
 
 jobs:
   build:
