@@ -20,7 +20,7 @@ const devConfig = {
       name: "marketing",
       filename: "remoteEntry.js",
       exposes: {
-        "./MarketingApp": "./src/bootstrap",
+        "./MarketingApp": "./src/bootstrap.jsx",
       },
       shared: packageJson.dependencies,
     }),
