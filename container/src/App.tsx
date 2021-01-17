@@ -1,4 +1,5 @@
-import React, { lazy, Suspense, useState, useEffect } from "react";
+import * as React from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import {
   BrowserRouter,
   Route,
@@ -17,9 +18,9 @@ import {
 import Header from "./components/Header";
 import Progress from "./components/Progress";
 
-const MarketingLazy = lazy(() => import("./components/MarketingApp"));
-const AuthLazy = lazy(() => import("./components/AuthApp"));
-const DashboardLazy = lazy(() => import("./components/DashboardApp"));
+const MarketingLazy = lazy(() => import("./components/MarketingApp.jsx"));
+const AuthLazy = lazy(() => import("./components/AuthApp.jsx"));
+const DashboardLazy = lazy(() => import("./components/DashboardApp.jsx"));
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
@@ -27,7 +28,7 @@ const generateClassName = createGenerateClassName({
 
 const history = createBrowserHistory();
 
-const App = () => {
+const App = (): JSX.Element => {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {

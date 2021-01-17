@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -54,10 +54,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Header({ isSignedIn, onSignOut }) {
+export default function Header({ isSignedIn, onSignOut }): JSX.Element {
   const classes = useStyles();
 
-  const onClick = () => {
+  const onClick = (): void => {
     if (isSignedIn && onSignOut) {
       onSignOut();
     }
