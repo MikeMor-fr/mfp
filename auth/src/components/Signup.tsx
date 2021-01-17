@@ -12,7 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { Link } from "react-router-dom";
 
-function Copyright() {
+function Copyright(): JSX.Element {
   return (
     <Typography variant='body2' color='textSecondary' align='center'>
       {"Copyright © "}
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignUp({ onSignIn }) {
+export default function SignUp({ onSignIn }): JSX.Element {
   const classes = useStyles();
 
   return (

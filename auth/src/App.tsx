@@ -12,7 +12,7 @@ const generateClassName = createGenerateClassName({
   productionPrefix: "au",
 });
 
-const App = ({ history, onSignIn }) => (
+const App = ({ history, onSignIn }): JSX.Element => (
   <div>
     <StylesProvider generateClassName={generateClassName}>
       <Router history={history}>
